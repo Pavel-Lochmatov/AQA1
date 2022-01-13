@@ -1,5 +1,6 @@
 package ru.netology.service;
 
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -7,7 +8,8 @@ import org.junit.Test;
 public class CashbackHackServiceTest {
 
     @org.junit.Test
-    public void testRemain() {
+    public void RemainLessAmount1000() {
+
         int amount = 900;
         int expected = 100;
 
@@ -17,8 +19,10 @@ public class CashbackHackServiceTest {
 
     }
 
+
     @org.junit.Test
-    public void testRemainMoAmount1000() {
+    public void RemainMoreAmount1000() {
+
         int amount = 1500;
         int expected = 500;
 
@@ -28,8 +32,10 @@ public class CashbackHackServiceTest {
 
     }
 
+
     @org.junit.Test
-    public void testRemainAmount1000() {
+    public void RemainAmount1000() {
+
         int amount = 1000;
         int expected = 0;
 
@@ -38,6 +44,4 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
 
     }
-
 }
-
